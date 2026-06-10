@@ -163,3 +163,36 @@ Arquivos principais:
 - Samuel Paula Nunes Salheb:
 - Arthur José Aviz Lima:
 - Gabriel Cruz Filgueira:
+
+# Declaração de uso de IA
+
+## Ferramentas utilizadas
+
+Foram utilizadas as ferramentas ChatGPT 5.5 e Claude, nas datas 03/06/2026 e 09/06/2026 respectivamente
+
+## Finalidade
+
+A ferramenta foi usada como apoio para:
+
+- organizar ideias de implementação;
+- revisar a estrutura do repositório;
+- auxiliar na escrita inicial de comentários e arquivos auxiliares;
+- sugerir testes e rastreamentos;
+- apoiar a modelagem da Máquina de Turing Não Determinística para Subset Sum em unário.
+- apoio na organização inicial do relatório e dos materiais auxiliares, como os slides.
+
+## Resumo dos prompts
+
+Foram solicitadas sugestões de máquinas/modelos adequados à proposta da atividade, revisão da documentação da APD, análise da máquina em λ-Cálculo, criação de uma estrutura de repositório e apoio na elaboração de uma Máquina de Turing Não Determinística com árvore de computação explícita. Também foi solicitado apoio para a criação e estruturação do relatório e dos slides utilizados na apresentação.
+
+## Trechos aproveitados
+
+Foram aproveitados rascunhos de estrutura, sugestões de teste, textos explicativos iniciais e uma versão base do simulador da MT Não Determinística.
+
+## Revisão da equipe
+
+Foi modificada a primeira versão feita da máquina APD que teve apoio da ferramenta Claude, com o intuito de melhorar a apresentação dela. As primeiras versões da documentação do GitHub também foram posteriormente revisadas e corrigidas pela equipe. Por fim, o slide teve novas adições para enriquecer a apresentação.
+
+## Declaração
+
+Declaramos que os materiais foram revisados pela equipe e que o uso de IA teve caráter de apoio, sem substituir o estudo, a validação técnica e a compreensão dos modelos computacionais utilizados.
