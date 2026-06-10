@@ -158,14 +158,8 @@ Arquivos principais:
 
 ## Integrantes
 
-Preencher com os nomes completos dos cinco integrantes.
-
-- Integrante 1:
-- Integrante 2:
-- Integrante 3:
-- Integrante 4:
-- Integrante 5:
-
-## Observações para a apresentação
-
-Cada integrante deve conseguir explicar ao menos uma parte técnica do projeto: formalismo, implementação, testes, rastreamento ou comparação entre os modelos. A MT Não Determinística foi organizada para mostrar explicitamente os ramos de computação, reforçando a ideia de aceitação por existência de um ramo aceitante.
+- João Pedro Almeida Follmann:
+- Yuri Antonio Santos Fernandes:
+- Samuel Paula Nunes Salheb:
+- Arthur José Aviz Lima:
+- Gabriel Cruz Filgueira:
