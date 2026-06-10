@@ -1,0 +1,55 @@
+Entrada: aa#aaa#a=aaaa
+Números: [2, 3, 1]
+Alvo: 4
+Resultado: ACEITA
+Configurações visitadas: 46
+Ramos finais: 8
+Caminho aceitante: -2 +3 +1
+
+Árvore de computação:
+└── q0_validar_entrada | i=0 | soma=0 | alvo=4 | caminho=∅ | configuração inicial
+    └── q1_escolher_numero | i=0 | soma=0 | alvo=4 | caminho=∅ | entrada validada; começa a árvore de escolhas
+        ├── q2_incluir_numero | i=0 | soma=0 | alvo=4 | caminho=∅ | ramo não determinístico: incluir 2
+        │   └── q1_escolher_numero | i=1 | soma=2 | alvo=4 | caminho=+2 | incluiu 2
+        │       ├── q2_incluir_numero | i=1 | soma=2 | alvo=4 | caminho=+2 | ramo não determinístico: incluir 3
+        │       │   └── q1_escolher_numero | i=2 | soma=5 | alvo=4 | caminho=+2 +3 | incluiu 3
+        │       │       ├── q2_incluir_numero | i=2 | soma=5 | alvo=4 | caminho=+2 +3 | ramo não determinístico: incluir 1
+        │       │       │   └── q1_escolher_numero | i=3 | soma=6 | alvo=4 | caminho=+2 +3 +1 | incluiu 1
+        │       │       │       └── q4_comparar_soma | i=3 | soma=6 | alvo=4 | caminho=+2 +3 +1 | todos os números foram decididos
+        │       │       │           └── qrej_rejeita | i=3 | soma=6 | alvo=4 | caminho=+2 +3 +1 | soma diferente do alvo
+        │       │       └── q3_ignorar_numero | i=2 | soma=5 | alvo=4 | caminho=+2 +3 | ramo não determinístico: ignorar 1
+        │       │           └── q1_escolher_numero | i=3 | soma=5 | alvo=4 | caminho=+2 +3 -1 | ignorou 1
+        │       │               └── q4_comparar_soma | i=3 | soma=5 | alvo=4 | caminho=+2 +3 -1 | todos os números foram decididos
+        │       │                   └── qrej_rejeita | i=3 | soma=5 | alvo=4 | caminho=+2 +3 -1 | soma diferente do alvo
+        │       └── q3_ignorar_numero | i=1 | soma=2 | alvo=4 | caminho=+2 | ramo não determinístico: ignorar 3
+        │           └── q1_escolher_numero | i=2 | soma=2 | alvo=4 | caminho=+2 -3 | ignorou 3
+        │               ├── q2_incluir_numero | i=2 | soma=2 | alvo=4 | caminho=+2 -3 | ramo não determinístico: incluir 1
+        │               │   └── q1_escolher_numero | i=3 | soma=3 | alvo=4 | caminho=+2 -3 +1 | incluiu 1
+        │               │       └── q4_comparar_soma | i=3 | soma=3 | alvo=4 | caminho=+2 -3 +1 | todos os números foram decididos
+        │               │           └── qrej_rejeita | i=3 | soma=3 | alvo=4 | caminho=+2 -3 +1 | soma diferente do alvo
+        │               └── q3_ignorar_numero | i=2 | soma=2 | alvo=4 | caminho=+2 -3 | ramo não determinístico: ignorar 1
+        │                   └── q1_escolher_numero | i=3 | soma=2 | alvo=4 | caminho=+2 -3 -1 | ignorou 1
+        │                       └── q4_comparar_soma | i=3 | soma=2 | alvo=4 | caminho=+2 -3 -1 | todos os números foram decididos
+        │                           └── qrej_rejeita | i=3 | soma=2 | alvo=4 | caminho=+2 -3 -1 | soma diferente do alvo
+        └── q3_ignorar_numero | i=0 | soma=0 | alvo=4 | caminho=∅ | ramo não determinístico: ignorar 2
+            └── q1_escolher_numero | i=1 | soma=0 | alvo=4 | caminho=-2 | ignorou 2
+                ├── q2_incluir_numero | i=1 | soma=0 | alvo=4 | caminho=-2 | ramo não determinístico: incluir 3
+                │   └── q1_escolher_numero | i=2 | soma=3 | alvo=4 | caminho=-2 +3 | incluiu 3
+                │       ├── q2_incluir_numero | i=2 | soma=3 | alvo=4 | caminho=-2 +3 | ramo não determinístico: incluir 1
+                │       │   └── q1_escolher_numero | i=3 | soma=4 | alvo=4 | caminho=-2 +3 +1 | incluiu 1
+                │       │       └── q4_comparar_soma | i=3 | soma=4 | alvo=4 | caminho=-2 +3 +1 | todos os números foram decididos
+                │       │           └── qacc_aceita | i=3 | soma=4 | alvo=4 | caminho=-2 +3 +1 | soma igual ao alvo
+                │       └── q3_ignorar_numero | i=2 | soma=3 | alvo=4 | caminho=-2 +3 | ramo não determinístico: ignorar 1
+                │           └── q1_escolher_numero | i=3 | soma=3 | alvo=4 | caminho=-2 +3 -1 | ignorou 1
+                │               └── q4_comparar_soma | i=3 | soma=3 | alvo=4 | caminho=-2 +3 -1 | todos os números foram decididos
+                │                   └── qrej_rejeita | i=3 | soma=3 | alvo=4 | caminho=-2 +3 -1 | soma diferente do alvo
+                └── q3_ignorar_numero | i=1 | soma=0 | alvo=4 | caminho=-2 | ramo não determinístico: ignorar 3
+                    └── q1_escolher_numero | i=2 | soma=0 | alvo=4 | caminho=-2 -3 | ignorou 3
+                        ├── q2_incluir_numero | i=2 | soma=0 | alvo=4 | caminho=-2 -3 | ramo não determinístico: incluir 1
+                        │   └── q1_escolher_numero | i=3 | soma=1 | alvo=4 | caminho=-2 -3 +1 | incluiu 1
+                        │       └── q4_comparar_soma | i=3 | soma=1 | alvo=4 | caminho=-2 -3 +1 | todos os números foram decididos
+                        │           └── qrej_rejeita | i=3 | soma=1 | alvo=4 | caminho=-2 -3 +1 | soma diferente do alvo
+                        └── q3_ignorar_numero | i=2 | soma=0 | alvo=4 | caminho=-2 -3 | ramo não determinístico: ignorar 1
+                            └── q1_escolher_numero | i=3 | soma=0 | alvo=4 | caminho=-2 -3 -1 | ignorou 1
+                                └── q4_comparar_soma | i=3 | soma=0 | alvo=4 | caminho=-2 -3 -1 | todos os números foram decididos
+                                    └── qrej_rejeita | i=3 | soma=0 | alvo=4 | caminho=-2 -3 -1 | soma diferente do alvo

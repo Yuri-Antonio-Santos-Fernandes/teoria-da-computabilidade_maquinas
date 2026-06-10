@@ -1,0 +1,11 @@
+caso,expressao,tipo,passos_esperados,resultado_esperado
+1,"SUCC ZERO",padrão,3,1
+2,"SUCC UM",padrão,3,2
+3,"ADD UM DOIS",padrão,7,3
+4,"ADD DOIS DOIS",padrão,9,4
+5,"MULT DOIS TRES",complexo,12,6
+6,"SUCC (ADD UM UM)",composto,10,3
+7,"ADD (SUCC DOIS) DOIS",composto,12,5
+8,"MULT TRES ZERO",fronteira,7,0
+9,"ADD ZERO DOIS",fronteira,5,2
+10,"Var('x')",termo livre,0,"estável; não representa numeral de Church"

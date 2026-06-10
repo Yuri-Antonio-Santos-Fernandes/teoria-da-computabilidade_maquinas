@@ -1,0 +1,11 @@
+entrada,esperado,motivo
+"a+b",aceita,"expressão simples variável-operador-variável"
+"a-b",aceita,"expressão simples com subtração"
+"a*",rejeita,"operador sem operando à direita"
+"(a+b*c)",aceita,"parênteses com expressão sintaticamente válida"
+"((c-b))",aceita,"dois níveis de aninhamento"
+"()",rejeita,"parênteses vazios"
+"a+b)",rejeita,"fechamento de parêntese sem abertura correspondente"
+"(b+)",rejeita,"operador sem operando antes do fechamento"
+"((a-b)*c)",aceita,"dois níveis e operador externo"
+"(((a)))",rejeita,"ultrapassa o limite de aninhamento adotado"

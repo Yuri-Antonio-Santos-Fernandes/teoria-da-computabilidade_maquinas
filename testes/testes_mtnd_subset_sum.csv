@@ -1,0 +1,7 @@
+entrada,interpretação,esperado,obtido,caminho_aceitante
+"aa#aaa#a=aaaa","{2,3,1}, alvo 4",aceita,aceita,"-2 +3 +1"
+"a#aa#aaa=aaaaaa","{1,2,3}, alvo 6",aceita,aceita,"+1 +2 +3"
+"aa#aaaa=aaa","{2,4}, alvo 3",rejeita,rejeita,""
+"aaa#aa=aaaa","{3,2}, alvo 4",rejeita,rejeita,""
+"a#aa#aaa=","alvo vazio",rejeita,rejeita,""
+"aa##aaa=aaaa","bloco vazio",rejeita,rejeita,""
